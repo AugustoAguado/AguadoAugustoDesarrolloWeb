@@ -4,43 +4,122 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Importadora de Autorepuestos</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
   <header>
-    <a href=""><img src="./Assets/3.png" alt="Logo"></a>
-    <h1>Autorepuestos</h1>
-    <nav>
-      <ul>
-        <li><a href="#mision">Nosotros</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#propuesta">Propuesta</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img class="logo" src="./Assets/3.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white fs-4" href="#mision">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-4" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-4" href="#propuesta">Propuesta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-4" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
   
-  <section id="mision">
-    <h2>Misión, Visión y Valores</h2>
-    <p>Nuestra misión es proporcionar productos de calidad y un servicio excepcional a nuestros clientes. <br> Buscamos ser líderes en la industria de autorepuestos, brindando soluciones confiables y eficientes <br> para las necesidades de nuestros clientes.</p>
-    <p>Nuestra visión es ser reconocidos como la importadora líder <br> en autorepuestos a nivel nacional, construyendo relaciones sólidas con nuestros clientes y proveedores.</p>
-    <p>Nuestros valores incluyen integridad, calidad, servicio al cliente, innovación y responsabilidad.</p>
-  </section>
 
-  <section id="servicios">
-    <h2>Servicios Ofrecidos</h2>
-    <p>Ofrecemos una amplia gama de servicios para satisfacer las necesidades de nuestros clientes, incluyendo:</p>
-    <ul>
-      <li>Venta de autorepuestos</li>
-      <li>Asesoramiento técnico</li>
-      <li>Entrega a domicilio</li>
-      <li>Atención al cliente personalizada</li>
-    </ul>
-  </section>
 
-  <section id="propuesta">
-    <h2>Propuesta Comercial</h2>
-    <p>Nuestra propuesta comercial se basa en ofrecer productos de alta calidad a precios competitivos. <br> Trabajamos directamente con fabricantes y distribuidores para garantizar la calidad y la disponibilidad de nuestros productos. <br> Además, ofrecemos descuentos especiales para clientes frecuentes.</p>
+  <div class="carousel-container">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./Assets/deposito.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./Assets/Default_Imagen_de_empresa_importadora_3.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./Assets/Default_deposito_de_una_empresa_1.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+
+  <section id="mision" class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-5">
+                <h2 class="display-4">Misión, Visión y Valores</h2>
+            </div>
+            <div class="col-lg-4">
+                <h3 class="mb-4">Misión</h3>
+                <p class="lead">Proporcionar productos de calidad y un servicio excepcional a nuestros clientes.</p>
+            </div>
+            <div class="col-lg-4">
+                <h3 class="mb-4">Visión</h3>
+                <p class="lead">Ser reconocidos como la importadora líder en autorepuestos a nivel nacional.</p>
+            </div>
+            <div class="col-lg-4">
+                <h3 class="mb-4">Valores</h3>
+                <p class="lead">
+                    . Integridad<br>
+                    . Calidad<br>
+                    . Innovación<br>
+      
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  
+
+<section id="servicios">
+  <div class="servicios-container">
+      <h2>Servicios Ofrecidos</h2>
+      <p>Ofrecemos una amplia gama de servicios para satisfacer las necesidades de nuestros clientes, incluyendo:</p>
+      <ul>
+          <li>Venta de autorepuestos</li>
+          <li>Asesoramiento técnico</li>
+          <li>Entrega a domicilio</li>
+          <li>Atención al cliente personalizada</li>
+      </ul>
+  </div>
+</section>
+
+
+  <section id="propuesta" class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="mb-4">¿Quiénes somos?</h2>
+          <p>Somos una casa de autorepuestos comprometida con ofrecerte productos de alta calidad y un servicio excepcional para satisfacer todas tus necesidades automotrices.</p>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="mb-4">Nuestros servicios</h2>
+          <p>Ofrecemos una amplia selección de repuestos originales y de calidad garantizada, así como asesoramiento personalizado de nuestro equipo de expertos.</p>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="mb-4">¿Por qué elegirnos?</h2>
+          <p>Nos esforzamos por superar tus expectativas en cada interacción y asegurarnos de que encuentres exactamente lo que necesitas, cuando lo necesitas.</p>
+        </div>
+      </div>
+    </div>
   </section>
+  
+ 
 
   <section id="contacto">
     <h2>Contacto</h2>
@@ -56,6 +135,6 @@
     <a href=""><img src="./Assets/icons8-facebook-48.png" alt="Facebook Logo"></a>
     <a href=""><img src="./Assets/icons8-whatsapp-48.png" alt="Whatsapp Logo"></a>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
